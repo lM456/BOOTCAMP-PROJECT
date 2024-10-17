@@ -1,0 +1,866 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+header h4 {
+    color:#fff;
+    margin-top: 10px;
+    font-weight: bold; 
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+footer {
+    height: calc(100vh - 100%);
+    background-color: #fff; /* Atau gambar latar belakang lain jika diinginkan */
+}
+
+nav {
+    z-index: 100;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav .putih {
+    background-color: rgb(255, 255, 255);
+}
+
+nav .logo {
+    float: left;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 200px;
+    background-color: transparent;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 35%;
+    padding-left: 50px;
+}
+
+header .intro h3 span {
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+    line-height: 110%;
+}
+
+header .intro p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.tombol {
+    background-color: rgb(155, 154, 154);
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.tombol:hover {
+    background-color: transparent;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 50%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: white;
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+section h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+section h3::after {
+    content: "";
+    border-bottom: 3px solid black;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+#Budaya {
+    text-align: center;
+    background-color: white
+}
+
+section .ringkasan {
+    font-size: 17px;
+    font-style: italic;
+    color: rgb(102, 101, 101);
+    text-align: center;
+}
+
+section .konten-isi p {
+    font-style: normal;
+
+}
+
+/* Materi */
+/* CSS untuk menampilkan teks materi di bawah gambar lingkaran */
+.materi {
+    width: 100%;
+    height: 150vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: white;
+    
+}
+
+.materi h1 {
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+
+.satuanmateri {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.Teksboksmateri{
+    flex-basis: 31%;
+    background: rgba(245, 218, 143, 0.507);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.Teksboksmateri p{
+    font-size: 16px;
+}
+h5{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 20px;
+}
+/* CSS untuk menampilkan teks materi di bawah gambar lingkaran */
+.materi-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 15px;
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+    
+}
+
+.materi-1 img {
+    width: 200px; /* Mengisi ruang di dalam lingkaran */
+    height: 200px; /* Mengisi ruang di dalam lingkaran */
+    border-radius: 50%;
+    object-fit: cover; /* Menyesuaikan gambar ke dalam lingkaran tanpa merubah aspek rasio */
+    margin-bottom: 10px;
+}
+.materi-1 p {
+    text-align: center; /* Menyelaraskan teks di tengah */
+    font-size: 15px; /* Ukuran font */
+}
+
+.materi-1:hover {
+    transform: scale(1.1); /* Memberikan efek sedikit membesar saat hover */
+}
+
+.teks-materi {
+    position: absolute; /* Mengatur teks materi agar bisa ditempatkan secara bebas */
+    bottom: 0; /* Menempatkan teks di bagian bawah */
+    left: 0; /* Menempatkan teks di sebelah kiri */
+    width: 100%; /* Memastikan lebar teks sesuai dengan lingkaran */
+    background-color: rgba(0, 0, 0, 0.5); /* Memberikan latar belakang semi transparan */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    transform: translateY(100%); /* Menggeser teks ke bawah gambar */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.materi-1:hover .teks-materi {
+    transform: translateY(0); /* Menggeser teks kembali ke posisi semula saat hover */
+}
+
+
+/* Senjata Tradisional */
+.senjata-tradisional {
+    background-color: rgb(236, 236, 236);
+    padding: 50px 0;
+
+}
+
+.judul h3 {
+    text-align: center;
+}
+
+.contohsenjatatradisional .judul {
+    font-size: 0;
+}
+.gambar-senjatatradisional {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.gambar-senjatatradisional .contohsenjatatradisional {
+    margin: 0 60px 30px; /* Atur margin antara kolom gambar */
+    vertical-align: top; /* Mengatur vertikal ke atas */
+}
+
+.contohsenjatatradisional {
+    width: calc(25% - 30px);
+    max-width: 200px; /* Membatasi lebar maksimum wadah gambar */
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+   
+}
+
+.contohsenjatatradisional img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Mengisi area kontainer tanpa memotong gambar */
+    object-position: center;
+    overflow: hidden;
+
+}
+.contohsenjatatradisional:hover {
+transform: scale(1.1);
+
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.layer:hover {
+    background: rgba(100, 100, 100, 0.63);
+}
+
+.layer h4 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h4 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Tarian Tradisional */
+.tarian-tradisional {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.judul2 h3 {
+    text-align: center;
+}
+
+.gambar-tariantradisional {
+    text-align: center; /* Pusatkan gambar */
+}
+.gambar-tariantradisional .contohtariantradisional {
+    margin: 0 60px 30px; /* Atur margin antara kolom gambar */
+    vertical-align: top; /* Mengatur vertikal ke atas */
+}
+.contohtariantradisional {
+    width: calc(25% - 30px);
+    max-width: 200px; /* Membatasi lebar maksimum wadah gambar */
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+   
+}
+.contohtariantradisional:hover {
+    transform: scale(1.1);
+}    
+.contohtariantradisional img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Mengisi area kontainer tanpa memotong gambar */
+    object-position: center;
+    overflow: hidden;
+}
+
+.layer2 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.layer2:hover {
+    background: rgba(100, 100, 100, 0.63);
+}
+
+.layer2 h4 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer2:hover h4 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Alat Musik Tradisional */
+.alat-musiktradisional {
+    background-color: rgb(236, 236, 236);
+    padding: 50px 0;
+
+}
+
+.judul h3 {
+    text-align: center;
+}
+
+.contohalatmusiktradisional .judul {
+    font-size: 0;
+}
+.gambar-alatmusiktradisional {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.gambar-alatmusiktradisional .contohalatmusiktradisional {
+    margin: 0 60px 30px; /* Atur margin antara kolom gambar */
+    vertical-align: top; /* Mengatur vertikal ke atas */
+}
+
+.contohalatmusiktradisional {
+    width: calc(25% - 30px);
+    max-width: 200px; /* Membatasi lebar maksimum wadah gambar */
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+   
+}
+
+.contohalatmusiktradisional img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Mengisi area kontainer tanpa memotong gambar */
+    object-position: center;
+    overflow: hidden;
+
+}
+.contohalatmusiktradisional:hover {
+transform: scale(1.1);
+
+}
+
+.layer3 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.layer3:hover {
+    background: rgba(100, 100, 100, 0.63);
+}
+
+.layer3 h4 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer3:hover h4 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Rumah Adat */
+.rumah-adat {
+    background-color: rgb(236, 236, 236);
+    padding: 50px 0;
+
+}
+
+.judul h3 {
+    text-align: center;
+}
+
+.contohrumahadat .judul {
+    font-size: 0;
+}
+.gambar-rumahadat {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.gambar-rumahadat .contohrumahadat {
+    margin: 0 60px 30px; /* Atur margin antara kolom gambar */
+    vertical-align: top; /* Mengatur vertikal ke atas */
+}
+
+.contohrumahadat {
+    width: calc(25% - 30px);
+    max-width: 200px; /* Membatasi lebar maksimum wadah gambar */
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+   
+}
+
+.contohrumahadat img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Mengisi area kontainer tanpa memotong gambar */
+    object-position: center;
+    overflow: hidden;
+
+}
+.contohrumahadat :hover {
+transform: scale(1.1);
+
+}
+
+.layer4 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.layer4:hover {
+    background: rgba(100, 100, 100, 0.63);
+}
+
+.layer4 h4 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer4:hover h4 {
+    bottom: 49%;
+    opacity: 1;
+}
+/* Baju Adat */
+.baju-adat {
+    background-color: rgb(236, 236, 236);
+    padding: 50px 0;
+
+}
+
+.judul h3 {
+    text-align: center;
+}
+
+.contohbajuadat .judul {
+    font-size: 0;
+}
+.gambar-bajuadat {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.gambar-bajuadat .contohbajuadat {
+    margin: 0 60px 30px; /* Atur margin antara kolom gambar */
+    vertical-align: top; /* Mengatur vertikal ke atas */
+}
+
+.contohbajuadat {
+    width: calc(25% - 30px);
+    max-width: 200px; /* Membatasi lebar maksimum wadah gambar */
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+   
+}
+
+.contohbajuadat img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; /* Mengisi area kontainer tanpa memotong gambar */
+    object-position: center;
+    overflow: hidden;
+
+}
+.contohbajuadat :hover {
+transform: scale(1.1);
+
+}
+
+.layer5 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.layer5 :hover {
+    background: rgba(100, 100, 100, 0.63);
+}
+
+.layer5 h4 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer5:hover h4 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.konten {
+    position: relative; /* Tambahkan posisi relatif pada konten */
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Sesuaikan tinggi konten */
+}
+
+.Membatik {
+    margin-left: 50px;
+    position: relative; /* Tambahkan posisi relatif pada div Membatik */
+}
+
+.Membatik img {
+    width: 300px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Agar gambar tetap proporsional */
+    border-radius: 10px;
+}
+
+.TeksMembatik {
+    flex: 1; /* Memastikan teks memanfaatkan ruang yang tersedia */
+    text-align: left; /* Pusatkan teks */
+    margin-left: 30px;
+}
+
+/* Judul di atas gambar */
+.TeksMembatik h3 {
+    position: absolute;
+    top: 20%; /* Pusatkan vertikal */
+    left: 60%; /* Pusatkan horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan ke tengah */
+    font-size: 24px;
+    margin-bottom: 20px;
+    z-index: 1; /* Pastikan judul tampil di atas gambar */
+}
+
+/* Gaya untuk teks di bawah gambar */
+.TeksMembatik p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.layer6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 0; /* Pastikan layer tampil di belakang gambar */
+}
+
+/* CSS untuk section informasi */
+.informasi {
+    padding: 50px 0;
+}
+
+.informasi .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teksinfo {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.teksinfo h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gambarinfo {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeri img {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* General Footer Styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.footer-section p b {
+    color: #333;
+}
+
+/* Specific Footer Section Styles */
+.footer-section:nth-of-type(1) p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Social Media Section Styles */
+.footer-section p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Section Styles */
+#copyright {
+    background-color: #e8e8e8;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+#copyright .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

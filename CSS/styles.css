@@ -1,0 +1,799 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    scroll-behavior: smooth;
+
+    background-position: center;
+} 
+body {
+   margin: 0;
+   padding: 0;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav .putih {
+    background-color: rgb(255, 255, 255);
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 200px;
+    background-color: transparent;
+}
+
+.hitam {
+    display: none;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 35%;
+    padding-left: 50px;
+}
+
+header .intro h3 span {
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+    line-height: 110%;
+}
+
+header .intro p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.tombol {
+    background-color: rgb(155, 154, 154);
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.tombol:hover {
+    background-color: transparent;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 50%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: white;
+}
+
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+section h3::after {
+    content: "";
+    border-bottom: 50px solid black;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+#Budaya {
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+
+section .ringkasan {
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(102, 101, 101);
+}
+
+section .konten-isi p {
+    font-style: normal;
+}
+
+nav .putih {
+    background-color: rgb(255, 255, 255);
+}
+
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+}
+
+nav.putih ul li a {
+    color: black;
+}
+
+/* Pembatas */
+.pembatas {
+    height: 50px;
+    width: auto;
+}
+
+/* Materi */
+.materi {
+    width: 100%;
+    height: 150vh;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+    align-items: inherit;
+}
+
+.materi h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.satuanmateri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.Teksboksmateri {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(245, 218, 143, 0.507); /* Memberikan latar belakang semi transparan */
+    padding: 20px 12px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.Teksboksmateri p {
+    font-size: 16px;
+}
+
+h5 {
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.materi-1 {
+    position: relative;
+    width: 100px; /* Mengatur ukuran lingkaran */
+    height: 100px; /* Mengatur ukuran lingkaran */
+    border-radius: 50%; /* Mengubah bentuk gambar menjadi bulat */
+    overflow: hidden; /* Mengatasi gambar yang terpotong */
+    margin-bottom: 15px;
+    font-size: 20;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.materi-1 img {
+    width: 100%; /* Mengisi ruang di dalam lingkaran */
+    height: 100%; /* Mengisi ruang di dalam lingkaran */
+    object-fit: cover; /* Menyesuaikan gambar ke dalam lingkaran tanpa merubah aspek rasio */
+}
+
+.materi-1:hover {
+    transform: translateY(-10px);
+}
+
+#Budaya{
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+section .ringkasan{
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(102, 101, 101);
+}
+section .konten-isi p{
+    font-style: normal;
+}
+nav .putih {
+    background-color: rgb(255, 255, 255);
+}
+nav.putih .tombol-menu .garis{
+    background-color: #333;
+}
+
+nav.putih ul li a {
+    color: black;
+}
+
+/*pembatas{
+    background-image:url("");
+
+    height:50px;
+    width:auto;
+} */
+/* Materi */
+.materi{
+    width: 100%;
+    height: 150vh;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+    align-items: inherit;
+}
+.materi h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.satuanmateri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.Teksboksmateri {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(245, 218, 143, 0.507); /* Memberikan latar belakang semi transparan */
+    padding: 20px 12px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.Teksboksmateri p{
+    font-size: 16px;
+}
+h5{
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.materi-1 {
+    position: relative;
+    width: 100px; /* Mengatur ukuran lingkaran */
+    height: 100px; /* Mengatur ukuran lingkaran */
+    border-radius: 50%; /* Mengubah bentuk gambar menjadi bulat */
+    overflow: hidden; /* Mengatasi gambar yang terpotong */
+    margin-bottom: 15px;
+    font-size: 20;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.materi-1 img {
+    width: 100%; /* Mengisi ruang di dalam lingkaran */
+    height: 100%; /* Mengisi ruang di dalam lingkaran */
+    object-fit: cover; /* Menyesuaikan gambar ke dalam lingkaran tanpa merubah aspek rasio */
+}
+.materi-1:hover{
+    transform: translateY(-10px);
+}
+
+
+
+/*contoh gambar senirupa */
+.seni-rupa{
+    background-color: rgb(236, 236, 236);
+}
+.judul h3{
+    text-align: center;
+}
+.judul{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+.gambar-senirupa{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+    overflow: hidden; 
+}
+
+.contohsenirupa{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.layer:hover{
+    background: rgba(100, 100, 100, 0.63);
+}
+.layer h4{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*contoh gambar seni tari*/
+.seni-tari{
+    background-color: rgb(255, 255, 255);
+}
+.judul2 h3{
+    text-align: center;
+}
+.judul2{
+    height: 100vh;
+    width: 100%;
+    border-color: rgb(255, 255, 255);
+}
+
+.gambar-senitari{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contohsenitari{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 0 20px 0px rgba(0, 20, 0, 0.397);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.layer2{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.layer2:hover{
+  background:rgba(100, 100, 100, 0.63);
+}
+.layer2 h4{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer2:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*contoh alatmusik */
+.alat-musik{
+    background-color: rgb(236, 236, 236);
+}
+.judul3 h3{
+    text-align: center;
+    justify-content: space-around;
+
+}
+.judul3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+.gambar-alatmusik{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.contohalatmusik{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.397);
+    cursor: pointer; 
+}
+.layer3{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer3:hover{
+    background-color: rgba(100, 100, 100, 0.63);
+}
+.layer3 h4{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer3:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+/*rumah adat*/
+.rumah-adat{
+    background-color: white;
+}
+.judul4 h3{
+    text-align: center;
+    justify-content: space-around;
+}
+.judul4{
+    height: 130vh;
+    width: 100%;
+    border-color: rgb(255, 255, 255);
+}
+.contohrumahadat-1{
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   padding-top: 50px;
+   display: flex;
+   justify-content: space-around;
+}
+.contohrumahadat-2{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.contohrumahadat{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+}
+.layer4{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer4:hover{
+    background: rgba(0, 20, 0, 0.397);
+}
+.layer4 h4{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50px;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer4:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.konten {
+    background: #eee;
+
+    gap: 2rem;
+    justify-content: space-around;
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-self: space-around;
+}
+
+.konten .Membatik {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+
+.konten .Membatik img {
+    width: 90%;
+    margin-left: 100px;
+    box-shadow: 0px 0px 20px 0px;
+
+}
+
+.konten .teksMembatik {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex:1 1 42rem;
+}
+
+.konten .teksMembatik h3 {
+    font-size: 30px;
+    color: #000000;
+}
+
+.teksMembatik p {
+    font-size: 20px;
+    color: #10221b;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row{
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+.gambarinfo{
+    width: 50%;
+}
+.teksinfo{
+    width: 50%;
+
+}
+.teksinfo h3{
+    line-height: 110%;
+}
+.teksinfo p{
+    line-height: 25px;
+    font-size: 20px;
+    padding: 30px;
+    margin: 30px auto;
+}
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.galeri img{
+
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+:root{
+    --brown: #ae8327;
+    --dark-color: #795b1b;
+    --black:#444;
+    --light-color:#666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+
+@media screen and(max-width: 991.98px) {
+    .layar-dalam{
+        width: 90%;
+    }
+    nav .menu ul{
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+    }
+    nav .menu ul li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: white;
+        line-height: 40px;
+
+    }
+    nav .menu ul li a{
+        color: black;
+    }
+    .tombol-menu{
+        display: flex;
+    }
+}

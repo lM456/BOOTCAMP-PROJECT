@@ -1,0 +1,115 @@
+/* Mengatur gaya umum untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Gaya untuk header */
+header {
+    background: rgba(245, 218, 143, 0.507);
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Gaya untuk bagian utama */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Gaya untuk setiap section */
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk judul section */
+section h2 {
+    border-bottom: none;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Gaya untuk list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: none;
+}
+
+/* Gaya untuk subjudul dalam list */
+h1 {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* Gaya untuk subjudul lain */
+h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk gambar */
+section img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+/* Gaya untuk footer */
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background: rgba(245, 218, 143, 0.507);
+    color: #000000;
+    font-size: 0.8em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+
+    header, footer {
+        padding: 10px 0;
+    }
+
+    section {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}

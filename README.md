@@ -5,12 +5,12 @@ Isi yang mau diperbaiki:
 4. Tambah halaman login (optional)
 5. Tambah tulisan bergerak "Selamat datang di edu budaya" dihalaman awal (optional)
 6. Tambah link pembelajarannya, youtube, dan penjelasannya
-7. (Silahkan isi, kalo ada tambahan....)
-8.
+7.
+8. 
 
 
 Kelompok Bootcamp
 1. Aprilliansyah (21       )
 2. Lisa Mulyana (2201020006)
-3. Juan Prattycha Tazira (        )
+3. Juan Prattycha Tazira (2401020005)
 4. Khairunnisa Ku (       )

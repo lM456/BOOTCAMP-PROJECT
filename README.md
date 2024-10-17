@@ -1,13 +1,13 @@
 Isi yang mau diperbaiki:
--Halamannya dipisahkan
--Tambahkan tombol kembali
--Rapikan halaman webnya termasuk tulisan
--Tambah halaman login (optional)
--Tambah tulisan bergerak "Selamat datang di edu budaya" dihalaman awal (optional)
--Tambah link pembelajarannya, youtube, dan penjelasannya
--(Silahkan isi, kalo ada tambahan....)
--
--
+1. Halamannya dipisahkan
+2. Tambahkan tombol kembali
+3. Rapikan halaman webnya termasuk tulisan
+4. Tambah halaman login (optional)
+5. Tambah tulisan bergerak "Selamat datang di edu budaya" dihalaman awal (optional)
+6. Tambah link pembelajarannya, youtube, dan penjelasannya
+7. (Silahkan isi, kalo ada tambahan....)
+8.
+
 
 Kelompok Bootcamp
 1. Aprilliansyah (21       )

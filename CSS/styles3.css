@@ -21,6 +21,19 @@ header h1 {
     font-size: 1.8em;
 }
 
+header h2 {
+position: absolute;
+  top: 0px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: #f3f5c5;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: medium;
+}
+
 /* Gaya untuk bagian utama */
 main {
     max-width: 1200px;

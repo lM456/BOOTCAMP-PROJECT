@@ -29,6 +29,16 @@ header h4 {
     margin-left: 50px;
     font-size: 30px;
 }
+.moving-text {
+    font-family: 'Courier', monospace;
+    border-right: 2px solid #fff; /* Kursor */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Dimulai dari lebar 0 */
+    animation: ketik 10s steps(30) 1s forwards; /* Animasi mengetik */
+    font-weight: bold;
+    font-size: 24px !important;
+}
 
 footer {
     height: calc(100vh - 100%);

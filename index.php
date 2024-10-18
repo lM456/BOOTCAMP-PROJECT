@@ -37,17 +37,22 @@
             </p>
         </div>
     </header> 
-
+    
+    
     <main>
         <section id="Budaya">
             <div class="layar-dalam">
                 <h3>Budaya</h3>
-                <p class="ringkasan">Budaya adalah warisan kolektif nilai, keyakinan, tradisi, dan perilaku
-                     yang dianut dan dibagikan oleh suatu kelompok manusia, mencakup aspek-aspek 
-                     seperti bahasa, agama, makanan, seni, dan sistem sosial.</p>
+                <p class="ringkasan">Budaya adalah warisan kolektif dari nilai-nilai, keyakinan, tradisi, dan perilaku 
+                yang dianut oleh suatu kelompok manusia. Budaya mencakup berbagai aspek seperti bahasa, 
+                agama, makanan, seni, dan sistem sosial. Ini terbentuk melalui proses yang panjang 
+                dan melibatkan banyak unsur kompleks, seperti sistem agama, politik, adat istiadat, 
+                bahasa, dan pengaruh globalisasi. Setiap masyarakat memiliki budaya yang unik, 
+                yang mencerminkan identitas dan karakteristiknya.</p>
             </div>
             <div class="ringkasan">
-                <p> Budaya terbentuk dari banyak unsur yang rumit, termasuk sistem agama, politik, adat istiadat, bahasa, dan globalisasi. </p>
+                <p> Budaya terbentuk dari banyak unsur yang rumit, termasuk sistem agama, politik, adat istiadat, bahasa, dan globalisasi.
+                     </p>
             </div>
         </section>
 
@@ -427,14 +432,16 @@
         <footer>
             <div class="footer-section" id="About">
                 <h3>About Us</h3>
-                <p>EduBudaya adalah sebuah platform yang didedikasikan untuk melestarikan dan mempromosikan warisan budaya kaya Nusantara. Kami bertujuan untuk mendidik dan melibatkan masyarakat tentang beragam tradisi, seni, dan praktik yang mendefinisikan identitas kolektif kita. Bergabunglah dengan kami dalam misi kami untuk merayakan dan mempertahankan warisan budaya kita.</p>
+                <p>EduBudaya adalah sebuah platform yang didedikasikan untuk melestarikan dan mempromosikan warisan budaya kaya Nusantara. Kami bertujuan untuk mendidik dan melibatkan masyarakat tentang beragam tradisi, seni, dan praktik yang mendefinisikan identitas kolektif kita. Bergabunglah dengan kami dalam misi kami untuk merayakan dan mempertahankan warisan budaya kita.
+                <a href="https://repository.penerbiteureka.com/media/publications/349168-kebudayaan-indonesia-6eb83bd5.pdf" class="kotak-link">Pelajari Lebih Lanjut</a>
+                </p>
             </div>
             <div class="footer-section" id="Contact Us">
                 <h3>Social Media</h3>
                 <p>
-                    <a href="https://www.instagram.com/lisamlyna_" target="_blank">
+                    <a href="https://www.instagram.com/edubudaya" target="_blank">
                         <img src="Foto/instagram.png" alt="Instagram Icon" width="20" height="20">
-                        <b>Instagram: </b>@lisamlyna_
+                        <b>Instagram: </b>@edubudaya
                     </a>
                 </p>
                 <p>
@@ -442,12 +449,14 @@
                     <b>WhatsApp: </b><a href="https://wa.me/6282268006841" target="_blank">+6282268006841</a>
                 </p>
                 <p>
-                    <a href="https://www.tiktok.com/@lisamlyna" target="_blank">
-                        <img src="Foto/tiktopok.png" alt="TikTok Icon" width="20" height="20">
-                        <b>TikTok: </b>@lisamlyna
-                    </a>
+                <a href="https://github.com/lM456/BOOTCAMP-PROJECT.git" target="_blank"></a>
+                    <img src="Foto/github.png" alt="GitHub TikTok Icon" width="20" height="20">
+                    <b>GitHub: </b><a href="https://github.com/lM456/BOOTCAMP-PROJECT.git" target="_blank">https://github.com/lM456/BOOTCAMP-PROJECT.git</a>
+                    
                 </p>
+
+                
             </div>
         </footer>
-        
+</body>       
         

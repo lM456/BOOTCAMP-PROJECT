@@ -193,11 +193,19 @@ section h3::after {
     background-color: rgb(236, 236, 236);
 }
 
-section .ringkasan {
-    font-size: 12px;
-    font-style: italic;
-    color: rgb(102, 101, 101);
+.section .ringkasan {
+    text-align: center; /* Rata tengah teks */
+    max-width: 800px; /* Batas maksimal lebar teks agar tidak terlalu melebar */
+    margin: 0 auto; /* Untuk memposisikan div di tengah */
+    padding: 20px;
+    line-height: 1.6; /* Spasi antar baris untuk keterbacaan */
 }
+
+.layar-dalam h3 {
+    text-align: center; /* Rata tengah judul */
+    margin-bottom: 20px;
+}
+
 
 section .konten-isi p {
     font-style: normal;
@@ -217,7 +225,7 @@ nav.putih ul li a {
 
 /* Pembatas */
 .pembatas {
-    height: 50px;
+    height: 800px;
     width: auto;
 }
 
@@ -692,38 +700,6 @@ h5{
     line-height: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .row{
     justify-content: center;
     display: flex;
@@ -745,6 +721,25 @@ h5{
     padding: 30px;
     margin: 30px auto;
 }
+.kotak-link {
+    display: inline-block; /* Agar bisa diatur ukuran dan padding */
+    padding: 10px 20px; /* Atur padding sesuai kebutuhan */
+    background-color: #007bff; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    border: 2px solid white; /* Warna dan ketebalan bingkai */
+    border-radius: 5px; /* Membuat sudut kotak sedikit melengkung */
+    margin-top: 10px; /* Jarak atas */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Animasi transisi */
+}
+
+.kotak-link:hover {
+    background-color: white; /* Warna latar belakang saat hover */
+    color: #88c2ff; /* Warna teks saat hover */
+    border-color: #007bff; /* Warna bingkai saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
 .galeri {
     display: flex;
     flex-wrap: wrap;
@@ -797,3 +792,4 @@ h5{
         display: flex;
     }
 }
+

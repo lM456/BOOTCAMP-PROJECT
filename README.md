@@ -10,7 +10,7 @@ Isi yang mau diperbaiki:
 
 
 Kelompok Bootcamp
-1. Aprilliansyah (21       )
+1. Aprilliansyah (2101020050)
 2. Lisa Mulyana (2201020006)
 3. Juan Prattycha Tazira (2401020005)
 4. Khairunnisa Ku (       )
